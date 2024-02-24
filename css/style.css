@@ -1,0 +1,44 @@
+header,
+.page,
+footer {
+  min-height: 200px;
+  background: grey;
+  display: flex;
+}
+
+.menu {
+  min-height: 200px;
+  display: inline-block;
+  background: blue;
+  width: 30%;
+}
+
+.content {
+  min-height: 200px;
+  display: inline-block;
+  background: lightgrey;
+  width: 70%;
+}
+
+@media (max-width: 600px) {
+    .page {
+        display: block;
+    }
+    .content {
+      width: 100%;
+      background: green;
+    }
+    .menu {
+        width: 100%;
+        background: red;
+}
+}
+@media (min-width: 600px) and (max-width: 800px) {
+    .menu {
+      background: brown;
+    }
+    .content{
+        background: pink;
+    }
+  }
+
